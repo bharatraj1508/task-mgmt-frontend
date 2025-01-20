@@ -7,7 +7,7 @@ interface ApiResponse<T> {
   token?: T;
 }
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://task-mgmt-backend-01.vercel.app";
 
 export const registerUser = async (data: User): Promise<ApiResponse<User>> => {
   try {
