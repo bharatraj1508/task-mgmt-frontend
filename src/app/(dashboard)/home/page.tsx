@@ -31,7 +31,10 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold mb-4">To Do</h2>
           <div className="space-y-4">
             {groupedTasks.todo.map((task, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+              <div
+                key={index}
+                className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
+              >
                 <h3 className="text-lg font-medium">{task.title}</h3>
                 <p className="text-gray-500">{task.description}</p>
               </div>
@@ -44,7 +47,10 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold mb-4">In Progress</h2>
           <div className="space-y-4">
             {groupedTasks.inProgress.map((task, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+              <div
+                key={index}
+                className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
+              >
                 <h3 className="text-lg font-medium">{task.title}</h3>
                 <p className="text-gray-500">{task.description}</p>
               </div>
@@ -57,7 +63,10 @@ export default function HomePage() {
           <h2 className="text-xl font-semibold mb-4">Completed</h2>
           <div className="space-y-4">
             {groupedTasks.completed.map((task, index) => (
-              <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+              <div
+                key={index}
+                className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
+              >
                 <h3 className="text-lg font-medium">{task.title}</h3>
                 <p className="text-gray-500">{task.description}</p>
               </div>
