@@ -22,7 +22,7 @@ export const menuItems = [
       {
         icon: <Home />,
         label: "Home",
-        href: "/",
+        href: "/home",
         visible: ["admin", "teacher", "student", "parent"],
       },
     ],

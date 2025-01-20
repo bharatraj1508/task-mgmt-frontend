@@ -1,7 +1,8 @@
 "use client";
 
+import SingleTask from "@/components/SingleTask";
 import { Task } from "@/interface/task";
-import api from "@/services/Interceptor";
+import Link from "next/link";
 import { fetchTasks } from "@/services/taskServices";
 import { useEffect, useState } from "react";
 
@@ -35,8 +36,9 @@ export default function HomePage() {
                 key={index}
                 className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
               >
-                <h3 className="text-lg font-medium">{task.title}</h3>
-                <p className="text-gray-500">{task.description}</p>
+                <Link href={`/task/edit/${task._id}`}>
+                  <SingleTask task={task} />
+                </Link>
               </div>
             ))}
           </div>
@@ -51,8 +53,9 @@ export default function HomePage() {
                 key={index}
                 className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
               >
-                <h3 className="text-lg font-medium">{task.title}</h3>
-                <p className="text-gray-500">{task.description}</p>
+                <Link href={`/task/edit/${task._id}`}>
+                  <SingleTask task={task} />
+                </Link>
               </div>
             ))}
           </div>
@@ -67,8 +70,9 @@ export default function HomePage() {
                 key={index}
                 className="bg-white p-4 rounded-lg shadow-sm cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-500"
               >
-                <h3 className="text-lg font-medium">{task.title}</h3>
-                <p className="text-gray-500">{task.description}</p>
+                <Link href={`/task/edit/${task._id}`}>
+                  <SingleTask task={task} />
+                </Link>
               </div>
             ))}
           </div>
