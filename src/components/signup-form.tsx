@@ -80,7 +80,7 @@ export function SignupForm({
               </div>
               <span className="sr-only">Acme Inc.</span>
             </a>
-            <h1 className="text-xl font-bold">School Management System</h1>
+            <h1 className="text-xl font-bold">Task Management System</h1>
             <div className="text-center text-sm">
               Already have an account?{" "}
               <Link href="/login" className="underline underline-offset-4">

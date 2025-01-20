@@ -66,7 +66,7 @@ export function LoginForm({
               </div>
               <span className="sr-only">Acme Inc.</span>
             </a>
-            <h1 className="text-xl font-bold">School Management System</h1>
+            <h1 className="text-xl font-bold">Task Management System</h1>
             <div className="text-center text-sm">
               Don&apos;t have an account?{" "}
               <Link href="/signup" className="underline underline-offset-4">
